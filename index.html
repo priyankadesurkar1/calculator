@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Only Calculator</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      width: 260px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .display {
+      width: 100%;
+      height: 60px;
+      background: #eaeaea;
+      margin-bottom: 20px;
+      text-align: right;
+      padding: 10px;
+      font-size: 24px;
+      border-radius: 8px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .buttons button {
+      padding: 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #f0f0f0;
+      cursor: default;
+      color: #333;
+    }
+
+    .buttons .operator {
+      background-color: #ddd;
+      font-weight: bold;
+    }
+
+    .buttons .equal {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .buttons .clear {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="display">123+456</div>
+    <div class="buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">÷</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">×</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">−</button>
+
+      <button>0</button>
+      <button>.</button>
+      <button class="equal">=</button>
+      <button class="operator">+</button>
+
+      <button class="clear">C</button>
+    </div>
+  </div>
+
+</body>
+</html>
